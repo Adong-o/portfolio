@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>my portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <div class="main">
+                <h1 class="headings">I AM <br>ADONGO JAKES</h1>
+                <button class="butn">Hire Me</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 class="headings">About Me</h1>
+            <div id="pic">
+                <img src="photo.jpg" alt="">
+                
+                <div class="intro">
+                    <h2>ADONGO JAKES </h2>
+                    <p>My name is adongo Jakes. I am a web developer student currently undergoing the web development course. I make projects related to website development and im more interested to make new projects everyday or everyweek just to be improve skills. I use web3schools, theordin project, skillcrush camp and freecode camp for learning and improve my skills. Im happy when i amke a project that i know is good to me. I invest alot of my time to code the web.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1 class="headings">Projects</h1>
+            <div class="gallery">
+                
+                <img src="projects/p2.jpg" alt="">
+                <img src="projects/p3.jpg" alt="">
+                <img src="projects/p4.jpg" alt="">
+                <img src="projects/p5.jpg" alt="">
+                <img src="projects/p6.jpg" alt="">
+                <img src="projects/p7.jpg" alt="">
+                <img src="projects/p8.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="services">
+            <h1 class="headings">Services</h1>
+            <div class="row">
+                <div class="box">
+                    <img src="bg.jpg" alt="">
+                    <h1 class="headings">Web Design</h1>
+                    <p>I do design websites in different styles because i believe i have mastered css and i still put most of my time to learn more about css and look at different designs that people have created and come up with my own styles and designs.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="bg.jpg" alt="">
+                <h1 class="headings">Web Development</h1>
+                    <p>I can stand infront of 1000 people and shout loud that i know html and everything it contains. css comes in hand in hand with that and try hard to do more projects.
+                    </p>
+                </div>
+                
+                <div class="box">
+                    <img src="bg.jpg" alt="">
+                <h1 class="headings">UI/UX Design</h1>
+                    <p>To be honest i did a course about UI/UX on camp skillcrush and never did more projects but im on a highway of learning new things everyday. For the next six months ill be able to perform tasks and solve problems about this part. Watch this space. BYE
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="heading">Contact Me</h1>
+            <form action="" class="form" onsubmit="sendEmail">
+                <input type="text" name="name" class="input" placeholder="Enter Name" required>
+                <input type="email" name="email" class="input" placeholder="Enter Email" required>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Type Message" ></textarea>
+                <input type="submit" value="SEND" id="send">
+                
+            </form>
+        </section>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Email.send({
+                        Host : "smtp.elasticemail.com",
+                        Username : "username",
+                        Password : "password",
+                        To : 'adongo969@gmail.com',
+                        From : "you@isp.com",
+                        Subject : "This is the subject",
+                        Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script>
+
+        
+        <audio controls>
+        <source src="osama.mp3" type="audio/mpeg">
+       </audio>
+
+
+
+
+
+    </body>
+</html>
